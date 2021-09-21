@@ -67,6 +67,8 @@ dari kiri ke kanan
 7. Putih - Coklat       
 8. Coklat             
 
+### 6.
+**Jawab**
 
 ### 7.
 **Jawab**
