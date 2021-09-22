@@ -76,30 +76,70 @@ Hasil:
 
 ### 7. Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya "Real.pdf")
 **Jawab:**
+
 Langkah
 
--> Pada bagian filter menuliskan ftp-data contains "Real.pdf"
+->Pada bagian filter menuliskan ftp-data contains "Real.pdf"
 <img src="screenshot/nomer7-filter.png" width="800"> 
+
 -> lalu dari kedua paket yang muncul, dapat dipilih salah satu untuk kemudian di klik kanan pada paket tersebut kemudian follow-> TCP Stream
 <img src="screenshot/nomer7-ascii.png" width="800"> 
+
 -> setelah itu pada bagian show data as diubah dari ASCII ke format RAW lalu di Save as … dengan nama file misal nomer7 dan berekstensi zip
 <img src="screenshot/nomer7-raw.png" width="800"> 
+
 -> setelah itu membuka file hasil download tersebut
 <img src="screenshot/nomer7-zip.png" width="800"> 
+
 -> kemudian saat dibuka filenya akan menampilkan halaman berikut
-<img src="screenshot/nomer7-pdf" width="800"> 
+<img src="screenshot/nomer7-pdf.png" width="800"> 
 
 
-### 8.
+### 8. Cari paket yang menunjukan pengambilan file dari FTP tersebut!
 **Jawab:**
 
+Pada filter yang digunakan yaitu ftp.request.command == STOR dimana akan mencari pengambilan file dari ftp tersebut
+<img src="screenshot/nomer8.png" width="800"> 
 
-### 9.
+### 9. Dari paket-paket yang menuju FTP terdapat indikasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!
 **Jawab:**
 
+Langkah
 
-### 10.
+-> Pada filter mengetikkan ftp-data.command contains "secret.zip"
+<img src="screenshot/nomer9-filter.png" width="800"> 
+
+-> Kemudian follow TCP Stream pada salah satu hasil
+<img src="screenshot/nomer9-ascii.png" width="800"> 
+
+-> Kemudian ubah data dari ASCII menjadi RAW kemudian save as .zip
+<img src="screenshot/nomer9-raw.png" width="800"> 
+<img src="screenshot/nomer9-zip.png" width="800"> 
+
+-> Ketika dibuka masih ada yang perlu diproses
+<img src="screenshot/nomer9-password.png" width="800"> 
+
+
+### 10. Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!
 **Jawab:**
+
+Langkah
+
+-> Pada filter wireshark menuliskan ftp-data contains "history" 
+<img src="screenshot/nomer10-history.png" width="800"> 
+
+-> Follow TCP yang di tuju
+<img src="screenshot/nomer10-isi-history.png" width="800"> 
+
+-> Pada bagian line-based terdapat beberapa tulisan seperti “bukanapaapa.txt” lalu ftp-data.command contains "bukanapaapa" 
+<img src="screenshot/nomer10-bukanapaapa.png" width="800"> 
+
+-> passwordnya adalah d1b1langbukanapaapajugagapercaya
+<img src="screenshot/nomer10-password.png" width="800"> 
+
+-> lalu saat dimasukkan passwordnya ke file Wanted.pdf
+<img src="screenshot/nomer10-isi-pdf.png" width="800"> 
+
 
 
 
