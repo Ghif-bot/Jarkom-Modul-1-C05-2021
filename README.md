@@ -67,23 +67,39 @@ dari kiri ke kanan
 7. Putih - Coklat       
 8. Coklat             
 
-### 6.
-**Jawab**
+### 6. Cari username dan password ketika melakukan login ke FTP Server!
+**Jawab:**
+Langkah:
+Menghidupkan Wireshark dan filter dengan keyword “ftp.request.command == PASS || ftp.request.command == USER”
+Hasil:
+<img src="screenshot/nomer6.png" width="800"> 
 
-### 7.
-**Jawab**
+### 7. Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya "Real.pdf")
+**Jawab:**
+Langkah
+
+-> Pada bagian filter menuliskan ftp-data contains "Real.pdf"
+<img src="screenshot/nomer7-filter.png" width="800"> 
+-> lalu dari kedua paket yang muncul, dapat dipilih salah satu untuk kemudian di klik kanan pada paket tersebut kemudian follow-> TCP Stream
+<img src="screenshot/nomer7-ascii.png" width="800"> 
+-> setelah itu pada bagian show data as diubah dari ASCII ke format RAW lalu di Save as … dengan nama file misal nomer7 dan berekstensi zip
+<img src="screenshot/nomer7-raw.png" width="800"> 
+-> setelah itu membuka file hasil download tersebut
+<img src="screenshot/nomer7-zip.png" width="800"> 
+-> kemudian saat dibuka filenya akan menampilkan halaman berikut
+<img src="screenshot/nomer7-pdf" width="800"> 
 
 
 ### 8.
-**Jawab**
+**Jawab:**
 
 
 ### 9.
-**Jawab**
+**Jawab:**
 
 
 ### 10.
-**Jawab**
+**Jawab:**
 
 
 
