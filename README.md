@@ -87,7 +87,7 @@ Langkah
 -> setelah itu membuka file hasil download tersebut
 <img src="screenshot/nomer7-zip.png" width="800"> 
 -> kemudian saat dibuka filenya akan menampilkan halaman berikut
-<img src="screenshot/nomer7-pdf" width="800"> 
+<img src="screenshot/nomer7-pdf.png" width="800"> 
 
 
 ### 8.
