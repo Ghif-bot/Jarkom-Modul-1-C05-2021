@@ -147,8 +147,12 @@ Langkah
 
 
 ### 11.
-**Jawab**
+**Jawab:**
 
+Langkah
+-> Pada filter mengetikkan  ```tcp src port 80``` untuk mengambil paket yang berasal dari port 80
+
+Hasil: 
 
 
 ### 12.
@@ -156,8 +160,12 @@ Langkah
 
 
 ### 13.
-**Jawab**
+**Jawab:**
 
+Langkah
+-> Pada filter mengetikkan ```dst port 443``` untuk menampilkan paket yang menuju port 443
+
+Hasil
 
 
 ### 14.
