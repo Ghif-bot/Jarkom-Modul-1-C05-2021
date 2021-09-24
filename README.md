@@ -98,8 +98,11 @@ Langkah
 ### 8. Cari paket yang menunjukan pengambilan file dari FTP tersebut!
 **Jawab:**
 
-Pada filter yang digunakan yaitu ftp.request.command == STOR dimana akan mencari pengambilan file dari ftp tersebut
+Pada filter yang digunakan yaitu ftp.request.command == STOR dimana akan mencari data file yang di upload dari ftp tersebut
 <img src="screenshot/nomer8.png" width="800"> 
+
+Pada filter yang digunakan yaitu ftp.request.command == RETR dimana akan mencari data file yang di downlaod dari ftp tersebut
+<img src="screenshot/nomer8-retr.png" width="800"> 
 
 ### 9. Dari paket-paket yang menuju FTP terdapat indikasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!
 **Jawab:**
